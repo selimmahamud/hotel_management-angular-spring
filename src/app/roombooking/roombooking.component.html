@@ -1,0 +1,78 @@
+  <div>
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="modal-header">
+            <h5 class="modal-title d-flex align-items-center">
+              <i class="bi bi-person-lines-fill fs-3 me-2"></i>Customer Information            
+            </h5>
+            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">            
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control shadow-none" formControlName="name">
+                </div>
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control shadow-none" formControlName="email">
+                </div>
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Phone Number</label>
+                  <input type="number" class="form-control shadow-none" formControlName="phonenumber">
+                </div>
+                <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control shadow-none" formControlName="dateofbirth">
+                  </div> 
+                <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Room Type</label>                    
+                    <select name="" id="" class="form-control shadow-none" formControlName="roomtype">
+                        <option value="Delux Room">Delux Room</option>
+                        <option value="Luxary Room">Luxary Room</option>
+                        <option value="VIP Room">VIP Room</option>
+                    </select>
+                </div>
+                <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Number of Guests</label>
+                    <input type="number" class="form-control shadow-none" formControlName="numberofguests">
+                </div>             
+               
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Check-in-date</label>
+                  <input type="date" class="form-control shadow-none" formControlName="checkindate">
+                </div>
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Check-out-date</label>
+                  <input type="date" class="form-control shadow-none" formControlName="checkoutdate">
+                </div>
+               
+                <div class="col-md-12 ps-0 mb-3">
+                    <label class="form-label">Address</label>                
+                    <textarea class="form-control shadow-none" rows="1" formControlName="address"></textarea>
+                  </div>
+                           
+              </div>
+            </div>
+            <div class="text-center my-1">
+              <button type="submit" class="btn text-white custom-bg shadow-none">Submit</button>  
+            </div>        
+          </div>       
+        </form>     
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+  
+
+ 
+
